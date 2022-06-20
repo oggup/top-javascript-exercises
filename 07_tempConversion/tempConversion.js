@@ -6,8 +6,8 @@ const ftoc = function (fahrenheit) {
 };
 
 const ctof = function (celsius) {
-  let farenheit = (celsius * (9 / 5) )+ 32;
-  farenheit = Number(farenheit.toFixed(1))
+  let farenheit = celsius * (9 / 5) + 32;
+  farenheit = Number(farenheit.toFixed(1));
   return farenheit;
 };
 
