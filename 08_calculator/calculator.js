@@ -7,16 +7,29 @@ const subtract = function (a, b) {
 };
 
 const sum = function (array) {
-  array.reduce((total,previous)=>{ 
-    total + previous
-  }, 0)
+  return array.reduce((total, currentNumber) => {
+    return total + currentNumber;
+  }, 0);
 };
 
-const multiply = function () {};
+function multiply(array) {
+  return array.reduce((total, currentNumber) => {
+    return total * currentNumber;
+  });
+}
 
-const power = function () {};
+const power = function (a, b) {
+  return Math.pow(a, b);
+};
 
-const factorial = function () {};
+const factorial = function (a) {
+  if (a === 0) {
+    return 1;
+  }
+  let product = 1;
+  for (let i = a; i > 0; i--) product = product * i;
+  return product;
+};
 
 // Do not edit below this line
 module.exports = {
